@@ -1,0 +1,85 @@
+.rented-books-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-top: 80px;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+    background-color: black;
+
+}
+
+.rented-books-track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    gap: 40px;
+    animation: slideTrack 30s linear infinite;
+}
+
+@keyframes slideTrack {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(170%);
+    }
+}
+
+.rented-card {
+    width: 400px;
+    height: 500px;
+    background: rgb(25, 66, 66);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    border-radius: 20px;
+}
+
+
+.rented-card h3 {
+    width: 70%;
+    text-align: center;
+    color: rgb(241, 234, 234);
+    margin-top: 40px;
+
+}
+
+.rented-card p {
+    margin-top: 5px;
+    margin-bottom: 30px;
+    color: rgb(241, 234, 234);
+    font-style: italic;
+    font-weight: 400;
+}
+
+.delete-rented-book {
+    background-color: rgb(18, 182, 133);
+    width: 35%;
+    height: 8%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.delete-rented-book:active {
+    transform: scale(0.9);
+}
+
+
+.image-container {
+    width: 120px;
+    height: 140px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}

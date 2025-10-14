@@ -1,0 +1,58 @@
+export const Books = [
+    {
+        book_title: 'White Nights',
+        author_name: 'sky',
+        img: "https://m.media-amazon.com/images/I/610IfoLPhvL._AC_UY436_FMwebp_QL65_.jpg",
+        id: 1,
+        quantity: 2,
+        amount: 15,
+        isRentTPActive: false,
+    },
+    {
+        book_title: 'The Psychology of Money',
+        author_name: 'Morgan',
+        img: "https://m.media-amazon.com/images/I/71XEsXS5RlL._AC_UY436_FMwebp_QL65_.jpg",
+        id: 2,
+        quantity: 4,
+        amount: 30,
+        isRentTPActive: false,
+    },
+    {
+        book_title: 'Dopamine Detox',
+        author_name: 'Thibaut',
+        img: "https://m.media-amazon.com/images/I/71Q2fXtMhaL._AC_UY436_FMwebp_QL65_.jpg",
+        id: 3,
+        quantity: 5,
+        amount: 35,
+        isRentTPActive: false,
+    },
+    {
+        book_title: 'Ikigai',
+        author_name: 'Héctor',
+        img: "https://m.media-amazon.com/images/I/81l3rZK4lnL._AC_UY436_FMwebp_QL65_.jpg",
+        id: 4,
+        quantity: 6,
+        amount: 40,
+        isRentTPActive: false,
+    },
+    {
+        book_title: 'Metamorphosis',
+        author_name: 'Franz',
+        img: "https://m.media-amazon.com/images/I/71qR+kG+43L._AC_UY436_FMwebp_QL65_.jpg",
+        id: 5,
+        quantity: 1,
+        amount: 30,
+        isRentTPActive: false,
+    },
+    {
+        book_title: 'The Theory Of Everything',
+        author_name: 'Stephen Hawking',
+        img: "https://m.media-amazon.com/images/I/61fR6OnVBUL._AC_UY436_FMwebp_QL65_.jpg",
+        id: 6,
+        quantity: 3,
+        amount: 40,
+        isRentTPActive: false,
+    },
+];
+
+// export default Books;
