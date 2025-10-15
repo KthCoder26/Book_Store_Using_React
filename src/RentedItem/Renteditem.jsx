@@ -19,6 +19,11 @@ export function Renteditem({ setValue, rentPayments, setrentPayments, value, set
     //         ))
     //     ))
     // }
+    useEffect((() => {
+        const totalNumberofRentedbooks = rentPayments.reduce((total, book) => total + book.quantity, 0);
+        setTotalNumberofBooksinValue(totalNumberofRentedbooks);
+    }), [rentPayments])
+        
     return (
         <div className="rented-books-wrapper">
             <div className="rented-books-track">
@@ -30,7 +35,8 @@ export function Renteditem({ setValue, rentPayments, setrentPayments, value, set
                             </div>
                             <h3>Renting {book.bookName}</h3>
                             <p>Written by {book.authorName}</p>
-                            <button className="delete-rented-book" onClick={() => DeleteRentedBook(book.bookID)}>Delete Item</button>
+                            <p>Number of books :- {book.quantity}/p>
+                            {/* <button className="delete-rented-book" onClick={() => DeleteRentedBook(book.bookID)}>Delete Item</button> */}
                         </div>
                     )
                 })}
