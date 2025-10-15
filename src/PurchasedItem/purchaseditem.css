@@ -63,11 +63,6 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.purchased-item:hover {
-    background-color: rgb(150, 29, 29);
-    transition: all 2s;
-}
-
 .purchased-item {
     width: 80%;
     height: 80%;
@@ -77,6 +72,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.purchased-item:hover {
+    background-color: #8B008B;
+    transition: all 2s;
 }
 
 .purchased-item h2 {
