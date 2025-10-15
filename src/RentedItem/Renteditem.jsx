@@ -2,23 +2,23 @@ import { useEffect, useState } from "react";
 import "../RentedItem/renteditem.css";
 
 export function Renteditem({ setValue, rentPayments, setrentPayments, value }) {
-    const DeleteRentedBook = (prop) => {
-        setrentPayments((prevState) => (
-            prevState.map((book) => (
-                book.bookID === prop ? { ...book, quantity: book.quantity - 1 } : book
-            )))
-        )
+    // const DeleteRentedBook = (prop) => {
+    //     setrentPayments((prevState) => (
+    //         prevState.map((book) => (
+    //             book.bookID === prop ? { ...book, quantity: book.quantity - 1 } : book
+    //         )))
+    //     )
 
 
-        const newValue = rentPayments.filter((book) => book.bookID !== prop);
-        setrentPayments(newValue);
+    //     const newValue = rentPayments.filter((book) => book.bookID !== prop);
+    //     setrentPayments(newValue);
 
-        setValue((prevState) => (
-            prevState.map((book) => (
-                book.id === prop ? { ...book, quantity: book.quantity + 1 } : book
-            ))
-        ))
-    }
+    //     setValue((prevState) => (
+    //         prevState.map((book) => (
+    //             book.id === prop ? { ...book, quantity: book.quantity + 1 } : book
+    //         ))
+    //     ))
+    // }
     return (
         <div className="rented-books-wrapper">
             <div className="rented-books-track">
