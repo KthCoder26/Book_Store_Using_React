@@ -36,7 +36,7 @@ export function Renteditem({ setValue, rentPayments, setrentPayments, value, set
                             <h3>Renting {book.bookName}</h3>
                             <p>Written by {book.authorName}</p>
                             <p>Number of books :- {book.quantity}/p>
-                            {/* <button className="delete-rented-book" onClick={() => DeleteRentedBook(book.bookID)}>Delete Item</button> */}
+                            
                         </div>
                     )
                 })}
