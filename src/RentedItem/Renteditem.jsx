@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "../RentedItem/renteditem.css";
 
-export function Renteditem({ setValue, rentPayments, setrentPayments, value }) {
+export function Renteditem({ setValue, rentPayments, setrentPayments, value, setTotalNumberofBooksinValue}) {
     // const DeleteRentedBook = (prop) => {
     //     setrentPayments((prevState) => (
     //         prevState.map((book) => (
