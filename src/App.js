@@ -196,7 +196,7 @@ function App() {
       )
     }
     else if(openedRI){
-      content= <Renteditem setValue={setValue} rentPayments={rentPayments} setrentPayments={setrentPayments} value={value}/>
+      content= <Renteditem setValue={setValue} rentPayments={rentPayments} setrentPayments={setrentPayments} value={value} setTotalNumberofBooksinValue={setTotalNumberofBooksinValue}>
     }
     else if(openedCI){
       content = <Purchaseditem ClosePurchaseItemBox={ClosePurchaseItemBox} purchased_books={purchased_books}  setPurchasedbooks={setPurchasedbooks}  rentPayments={rentPayments} setrentPayments={setrentPayments} value={value} setValue={setValue} setTotalAmount={setTotalAmount} setIsPaymentContainerOpened={setIsPaymentContainerOpened}  setTotalNumberofRentedbooks={setTotalNumberofRentedbooks} setTotalNumberofPurchasedBooks={setTotalNumberofPurchasedBooks} setopenedCI={setopenedCI}/>
