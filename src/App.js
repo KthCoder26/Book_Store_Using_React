@@ -32,7 +32,7 @@ function App() {
       if(openedRI === false){
         // setMainContainer(false);
         setopenedRI(true);
-        // setopenedCI(false);
+        setopenedCI(false);
       }
       else{
         // setMainContainer(true);
@@ -42,6 +42,7 @@ function App() {
     function openCartItem() {
         if(openedCI === false){
           setopenedCI(true);
+          setopenedRI(false);
         }
         else{
           setopenedCI(false);
