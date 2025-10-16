@@ -35,7 +35,7 @@ export function Renteditem({ setValue, rentPayments, setrentPayments, value, set
                             </div>
                             <h3>Renting {book.bookName}</h3>
                             <p>Written by {book.authorName}</p>
-                            <p>Number of books :- {book.quantity}/p>
+                            <p>Number of books :- {book.quantity}</p>
                             
                         </div>
                     )
